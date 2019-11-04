@@ -27,7 +27,10 @@
       (database-name :initarg :database-name
                      :accessor connection-database-name)
       (%handle :initarg :handle
-               :accessor connection-handle))
+               :accessor connection-handle)
+      (%microsecond-precision :type boolean
+                              :initarg :microsecond-precision
+                              :initform nil))
   (:documentation "Base class for managing DB connection."))
 
 @export

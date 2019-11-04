@@ -59,7 +59,8 @@
                             password
                             host
                             port
-                            use-ssl)))
+                            use-ssl)
+     :microsecond-precision microsecond-precision))
 
 @export
 (defclass <dbd-postgres-query> (<dbi-query>)
